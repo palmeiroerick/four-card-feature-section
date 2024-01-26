@@ -3,7 +3,7 @@ type TextProps = {
 };
 
 const Text = ({ children }: TextProps) => {
-  return <p>{children}</p>;
+  return <p className="text-grayishBlue text-center">{children}</p>;
 };
 
 export default Text;

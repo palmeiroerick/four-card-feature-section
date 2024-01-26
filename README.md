@@ -17,12 +17,12 @@ Users should be able to:
 
 ## Screenshot
 
-![](./screenshot.jpg)
+![Screen Shot 2024-01-26 at 18 47 49](https://github.com/palmeiroerick/four-card-feature-section/assets/148393698/cd9a53cb-05d2-4b8b-ae66-2587ee4979e1)
 
 ## Links
 
-- [Solution]()
-- [Live Site]()
+- [Solution](https://github.com/palmeiroerick/four-card-feature-section/)
+- [Live Site](https://four-card-feature-section-beta-ebon.vercel.app/)
 
 ## Built with
 

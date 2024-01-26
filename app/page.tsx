@@ -5,9 +5,9 @@ import Title from "@/components/Title";
 
 const Home = () => {
   return (
-    <main>
-      <section>
-        <div>
+    <main className="w-80 flex flex-col gap-16 my-20">
+      <section className="flex flex-col gap-4">
+        <div className="flex flex-col-reverse gap-1">
           <Title>Powered by Technology</Title>
           <SubTitle>Reliable, efficient delivery</SubTitle>
         </div>
@@ -16,7 +16,7 @@ const Home = () => {
           points to ensure that your project is successful
         </Text>
       </section>
-      <section>
+      <section className="flex flex-col gap-6">
         <Card
           id="Supervisor"
           text="Monitors activity to identify project roadblocks"

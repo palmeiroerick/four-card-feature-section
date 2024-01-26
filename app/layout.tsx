@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className} flex flex-col items-center`}>
+        {children}
+      </body>
     </html>
   );
 };

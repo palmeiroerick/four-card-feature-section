@@ -1,11 +1,12 @@
 import Image from "next/image";
 
 type CardProps = {
+  className?: string;
   id: "Supervisor" | "Team Builder" | "Karma" | "Calculator";
   text: string;
 };
 
-const Card = ({ id, text }: CardProps) => {
+const Card = ({ className, id, text }: CardProps) => {
   const borderColor = {
     Supervisor: "border-t-cyan",
     "Team Builder": "border-t-red",
@@ -22,13 +23,15 @@ const Card = ({ id, text }: CardProps) => {
 
   return (
     <div
-      className={`${borderColor[id]} flex justify-between h-56 w-80 flex-col rounded-md border-t-4 p-7 shadow-[0_6px_16px] shadow-grayishBlue`}
+      className={`${className} ${borderColor[id]} flex h-56 w-80 flex-col justify-between rounded-md border-t-4 bg-[white] p-7 shadow-[0_8px_16px] shadow-[#d4dae9] lg:w-[340px] lg:p-8`}
     >
       <div className="flex flex-col gap-2">
-        <h3 className="text-xl text-veryDarkBlue font-semibold">{id}</h3>
+        <h3 className="text-DarkBlue text-xl font-semibold">{id}</h3>
         <p className="text-[13px] text-grayishBlue">{text}</p>
       </div>
-      <Image className="self-end" src={iconUrl[id]} alt="" width={48} height={48} />
+      <div className="relative h-12 w-12 self-end lg:h-16 lg:w-16">
+        <Image className="object-contain" src={iconUrl[id]} alt="" fill />
+      </div>
     </div>
   );
 };

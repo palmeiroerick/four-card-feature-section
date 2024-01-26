@@ -3,7 +3,11 @@ type SubTitleProps = {
 };
 
 const SubTitle = ({ children }: SubTitleProps) => {
-  return <h2>{children}</h2>;
+  return (
+    <h2 className="text-center text-2xl font-extralight text-veryDarkBlue">
+      {children}
+    </h2>
+  );
 };
 
 export default SubTitle;
